@@ -75,17 +75,19 @@ double List::sum() {
 	return count;
 }
 
-void List::insertAsLast(double x) {
-	double temp = x;
-	if ((first_ != NULL)) {
-		Node * ptr = first_;
-		for (int i = 0; i<size() ; i++){
-			ptr = ptr->next_;
-			last_ = new Node(x, ptr);
-		}
+void List::insertAsLast(double x)
+{
+	if (empty())
+	{
+		first_ = new Node(x);
 	}
-
-	
+	else {
+		Node *ptr = first_;
+		for (int i = 0; i < List::size(); i++); {
+			ptr = ptr->next_;
+		}
+		ptr->next_ = new Node(x);
+	}
 }
 
 void List::insertAsFirst(double x)
