@@ -1,7 +1,6 @@
-// LinkedList.cpp
-
-// tom bailey   0745  5 oct 2010
-// Definition of methods for the List class.
+//James Hoffman
+//Lab02
+//9/25/2017
 
 #include "LinkedList.h"
 
